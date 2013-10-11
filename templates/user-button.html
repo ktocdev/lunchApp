@@ -1,6 +1,6 @@
-<a ng-click="userSelect($index)">
+<a ng-click="toggle = !toggle">
 	<label class="user-info">
 		<img ng-src="img/{{ user.pic }}" alt="" />
-		{{ user.name }} {{ user.lunch }}
+		<span>{{ user.name }}</span> <span ng-show="isLunchSelected($index)">- Lunch choice: {{ user.lunch }}</span>
 	</label>
 </a>
