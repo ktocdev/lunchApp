@@ -22,10 +22,11 @@ myApp.controller('UserCtrl', ['$scope', function ($scope) {
         "lunch": ""
     }];
 
-    //$scope.selectUser = '';
+    $scope.selectUser = '';
 
     $scope.userSelect = function(index) {
-        alert('you clicked ' + index);
+        $scope.selectUser = $scope.userInfo.users[index];
+        alert($scope.selectUser.name); 
     }
 
 }]);

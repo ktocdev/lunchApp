@@ -1,0 +1,7 @@
+<label class="user-info">
+	<img ng-src="img/{{ user.pic }}" alt="" />
+	{{ user.name }} {{ user.lunch }}
+</label>
+<div class="control-group">
+	<input type="text" placeholder="What's for lunch?" ng-model="lunch" />&nbsp;<input type='button' value="Submit" ng-click="submitLunch($scope.lunch)" />
+</div>

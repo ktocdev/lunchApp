@@ -7,6 +7,14 @@
 	margin: 5px 0;
 }
 
+.user-display a{
+	display: block;
+}
+
+.user-display a:hover{
+	text-decoration: none;
+}
+
 .user-display label{
 	cursor: pointer;
 	border: 2px solid transparent;
