@@ -1,0 +1,26 @@
+.user-display{
+	padding: 0;
+}
+
+.user-display li{
+	list-style-type: none;
+	margin: 5px 0;
+}
+
+.user-display label{
+	cursor: pointer;
+	border: 2px solid transparent;
+	padding: 5px;
+}
+
+.user-display label:hover{
+	border: 2px solid #dfdfdf;
+	transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-webkit-transition: .25s ease-in-out;
+}
+
+.user-display img{
+	max-height: 44px;
+	max-width: 44px;
+}
