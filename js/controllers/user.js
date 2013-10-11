@@ -3,30 +3,36 @@ myApp.controller('UserCtrl', ['$scope', function ($scope) {
     $scope.userInfo.users = [{
         "name": "Charlie",
         "pic": "charlie.png",
-        "lunch": ""
+        "lunch": " "
     },{
         "name": "Katie",
         "pic": "katie.jpg",
-        "lunch": ""
+        "lunch": " "
     },{
         "name": "Lola",
         "pic": "lola.jpg",
-        "lunch": ""
+        "lunch": " "
     },{
     	  "name": "Roberto",
         "pic": "roberto.png",
-        "lunch": ""
+        "lunch": " "
     },{
         "name": "Whitney",
         "pic": "whitney.jpg",
-        "lunch": ""
+        "lunch": " "
     }];
 
-    $scope.selectUser = '';
+    $scope.selectUser = "";
+    $scope.myLunch = "";
+
 
     $scope.userSelect = function(index) {
-        $scope.selectUser = $scope.userInfo.users[index];
-        alert($scope.selectUser.name); 
+      //$scope.selectUser = $scope.userInfo.users[index];
+      //alert($scope.selectUser.name + ' is selected');
+    }
+
+    $scope.submitLunch = function(index,myLunch) {
+      $scope.userInfo.users[index].lunch = myLunch;
     }
 
 }]);

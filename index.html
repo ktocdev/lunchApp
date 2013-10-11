@@ -9,6 +9,7 @@
   <script type='text/javascript' src='js/app.js'></script>
   <script type='text/javascript' src='js/controllers/user.js'></script>
   <script type='text/javascript' src='js/directives/user-button.js'></script>
+  <script type='text/javascript' src='js/directives/lunch-input.js'></script>
 </head>
 <body>
 	<div class="content">
@@ -27,6 +28,7 @@
 			        <ul class="user-display">
 			          <li ng-repeat="user in userInfo.users" class="user-display-item">
 			          	<a user-button></a>
+			          	<div lunch-input></div>
 			          </li>
 			        </ul>
 				    </div>

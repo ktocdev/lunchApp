@@ -15,13 +15,15 @@
 	text-decoration: none;
 }
 
-.user-display label{
+.user-display a label{
 	cursor: pointer;
 	border: 2px solid transparent;
 	padding: 5px;
+	float: left;
+	clear: both;
 }
 
-.user-display label:hover{
+.user-display a label:hover{
 	border: 2px solid #dfdfdf;
 	transition: .25s ease-in-out;
 	-moz-transition: .25s ease-in-out;
@@ -31,4 +33,8 @@
 .user-display img{
 	max-height: 44px;
 	max-width: 44px;
+}
+
+.user-display .control-group{
+	clear: both;
 }
