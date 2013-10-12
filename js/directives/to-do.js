@@ -3,7 +3,7 @@ myApp.directive('todo', function () {
 		restrict: 'A',
 		replace: true,
 		transclude: false,
-		templateUrl: 'templates/todoitem.html',
+		templateUrl: 'templates/todo-item.html',
 		link: function (scope, element, attrs) {
 		}
 	};
