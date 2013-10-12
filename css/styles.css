@@ -7,10 +7,6 @@
 	margin: 5px 0;
 }
 
-.user-display a{
-	display: block;
-}
-
 .user-display a:hover{
 	text-decoration: none;
 }
@@ -19,8 +15,6 @@
 	cursor: pointer;
 	border: 2px solid transparent;
 	padding: 5px;
-	float: left;
-	clear: both;
 }
 
 .user-display a label:hover{
@@ -36,7 +30,6 @@
 }
 
 .user-display .control-group{
-	clear: both;
 	display: none;
 }
 

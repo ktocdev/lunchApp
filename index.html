@@ -16,7 +16,7 @@
 
 </head>
 <body>
-	<div class="content">
+	<div class="content" ng-app="myApp">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -24,10 +24,10 @@
 				</div>
 			</div>
 			<hr>
-			<div class="row" ng-app="myApp">
-				<div class="col-md-6">
-					<h2>What's for lunch?</h2>
+			<div class="row">
+				<div class="col-md-8">
 				    <div ng-controller="UserCtrl">
+				        <h2>What's for lunch?</h2>
 				        <ul class="user-display">
 				          <li ng-repeat="user in userInfo.users" class="user-display-item">
 				          	<div user-button></div>
@@ -35,9 +35,9 @@
 				        </ul>
 				    </div>
 				</div>
-				<div class="col-md-6">
-					<h2>To Dos</h2>
+				<div class="col-md-4">
 					<div ng-controller="TodoCtrl"> 
+					<h2>To Dos</h2>
 						<ul class="list-group">
 							<li ng-repeat="todo in todoList.todos" class="list-group-item">
 								<div todo></div>
