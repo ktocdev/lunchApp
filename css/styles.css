@@ -37,4 +37,13 @@
 
 .user-display .control-group{
 	clear: both;
+	display: none;
+}
+
+.user-display .control-group.active{
+	display: block;
+}
+
+.user-display .close{
+	float: left;
 }

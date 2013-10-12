@@ -5,7 +5,9 @@ myApp.directive('lunchInput', function () {
     transclude: false,
     templateUrl: '/templates/lunch-input.html',
     link: function (scope, element, attrs) {
-      // DOM manipulation/events here!
+      
+
+      
     }
   };
 });

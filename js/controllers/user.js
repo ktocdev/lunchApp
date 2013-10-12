@@ -7,11 +7,11 @@ myApp.controller('UserCtrl', ['$scope', function ($scope) {
     },{
         "name": "Katie",
         "pic": "katie.jpg",
-        "lunch": ""
+        "lunch": "salad"
     },{
         "name": "Lola",
         "pic": "lola.jpg",
-        "lunch": "noodles"
+        "lunch": "soup"
     },{
     	  "name": "Roberto",
         "pic": "roberto.png",
@@ -23,15 +23,9 @@ myApp.controller('UserCtrl', ['$scope', function ($scope) {
     }];
 
     $scope.myLunch = "";
-
+    
     $scope.submitLunch = function(index,myLunch) {
       $scope.userInfo.users[index].lunch = myLunch;
-    }
-
-    $scope.isLunchSelected = function(index) {
-      if ($scope.userInfo.users[index].lunch.length > 0){
-        return true;
-      };
     }
 
 }]);

@@ -1,6 +1,11 @@
-<a ng-click="toggle = !toggle">
-	<label class="user-info">
-		<img ng-src="img/{{ user.pic }}" alt="" />
-		<span>{{ user.name }}</span> <span ng-show="isLunchSelected($index)">- Lunch choice: {{ user.lunch }}</span>
-	</label>
-</a>
+<div>
+	<a ng-click="toggle()">
+		<label class="user-info">
+			<img ng-src="img/{{ user.pic }}" alt="" />
+			<span>{{ user.name }}</span> <span ng-show="lunchSelected($index)">- Lunch choice: {{ user.lunch }}</span>
+		</label>
+	</a>
+	<div class="control-group" ng-class="{ active: on }">
+		<input type="text" ng-model="myLunch" placeholder="What's for lunch?" />&nbsp;<input type="button" value="Submit" ng-click="submitLunch($index,myLunch)" />&nbsp;<a ng-click="toggle()" class="close"><span class="glyphicon glyphicon-remove"></span></a><br>
+	</div>
+</div>
