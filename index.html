@@ -9,7 +9,11 @@
   <script type='text/javascript' src='js/app.js'></script>
   <script type='text/javascript' src='js/controllers/user.js'></script>
   <script type='text/javascript' src='js/directives/user-button.js'></script>
-  <script type='text/javascript' src='js/directives/lunch-input.js'></script>
+
+  <script type='text/javascript' src='js/app-todo.js'></script>
+	<script type='text/javascript' src='js/controllers/todo.js'></script>
+  <script type='text/javascript' src='js/directives/to-do.js'></script>
+
 </head>
 <body>
 	<div class="content">
@@ -20,16 +24,25 @@
 				</div>
 			</div>
 			<hr>
-			<div class="row">
-				<div class="col-md-12">
-				  <div ng-app="myApp">
+			<div class="row" ng-app="myApp">
+				<div class="col-md-6">
+					<h2>What's for lunch?</h2>
 				    <div ng-controller="UserCtrl">
-			        <ul class="user-display">
-			          <li ng-repeat="user in userInfo.users" class="user-display-item">
-			          	<div user-button></div>
-			          </li>
-			        </ul>
+				        <ul class="user-display">
+				          <li ng-repeat="user in userInfo.users" class="user-display-item">
+				          	<div user-button></div>
+				          </li>
+				        </ul>
 				    </div>
+				</div>
+				<div class="col-md-6">
+					<h2>To Dos</h2>
+					<div ng-controller="TodoCtrl"> 
+						<ul class="list-group">
+							<li ng-repeat="todo in todoList.todos" class="list-group-item">
+								<div todo></div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
