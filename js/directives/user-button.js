@@ -2,11 +2,12 @@ myApp.directive('userButton', function () {
   return {
     restrict: 'A',
     replace: true,
-    transclude: false,
+    transclude: true,
     templateUrl: '/templates/user-button.html',
     link: function (scope, element, attrs) {
 
       scope.on = false;
+			scope.somethingsSelected = false;
 
       scope.toggle = function () {
 			  scope.on = !scope.on;
@@ -17,7 +18,16 @@ myApp.directive('userButton', function () {
 		      return true;
 		    };
 		  }
-				
- 		}
+
+      scope.selectedUser = function () {
+      	for (i = 0; i <= scope.userInfo.users.length; i++ ){
+      		scope.somethingsSelected = !scope.somethingsSelected;
+					if (i == index){
+						scope.somethingsSelected = !scope.somethingsSelected;
+					} 
+				}
+			};
+
+		}
 	}
 });

@@ -5,6 +5,12 @@
 .user-display li{
 	list-style-type: none;
 	margin: 5px 0;
+	float: left;
+	clear: both;
+}
+
+.user-display .user-display-item .selectedUser > a{
+	color: #f93;
 }
 
 .user-display a:hover{

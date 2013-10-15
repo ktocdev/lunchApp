@@ -1,13 +1,11 @@
-myApp.directive('lunchInput', function () {
+myApp.directive('userButtonGroup', function () {
   return {
     restrict: 'A',
     replace: true,
     transclude: false,
-    templateUrl: '/templates/lunch-input.html',
+    templateUrl: '/templates/user-button-group.html',
     link: function (scope, element, attrs) {
-      
 
-      
-    }
-  };
+		}
+
 });
