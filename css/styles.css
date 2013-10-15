@@ -9,6 +9,14 @@
 	clear: both;
 }
 
+.user-display li.animateOff{
+	position: relative;
+	left: -1000px;
+	transition: 1s ease-in-out;
+	-moz-transition: 1s ease-in-out;
+	-webkit-transition: 1s ease-in-out;
+}
+
 .user-display .user-display-item .selectedUser > a{
 	color: #f93;
 }
@@ -39,7 +47,7 @@
 	display: none;
 }
 
-.user-display .control-group.active{
+.user-display .selectedUser .control-group{
 	display: block;
 }
 

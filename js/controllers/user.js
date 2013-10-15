@@ -22,10 +22,4 @@ myApp.controller('UserCtrl', ['$scope', function ($scope) {
       "lunch": ""
   }];
 
-  $scope.myLunch = "";
-  
-  $scope.submitLunch = function(index,myLunch) {
-    $scope.userInfo.users[index].lunch = myLunch;
-  }
-
 }]);
