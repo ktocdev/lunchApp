@@ -17,13 +17,13 @@ myApp.directive('userButton', function () {
 
 		  scope.submitLunch = function(index,lunch) {
 		    scope.userInfo.users[index].lunch = lunch; // sets lunch in data array 
-		    scope.close();
+		    scope.close(); 
 		  }
 
       scope.selectedUser = function (index) {
       	if (scope.somethingsSelected == true){
-      		scope.somethingsSelected = !scope.somethingsSelected;
       		animateOn();
+      		scope.somethingsSelected = !scope.somethingsSelected;
       	} else {
       		animateOff(index);
       		for (i = 0; i <= scope.userInfo.users.length; i++ ){

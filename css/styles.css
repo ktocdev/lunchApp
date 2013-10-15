@@ -7,14 +7,11 @@
 	margin: 5px 0;
 	float: left;
 	clear: both;
+	transition: all 1s ease-in-out;
 }
 
 .user-display li.animateOff{
-	position: relative;
-	left: -1000px;
-	transition: 1s ease-in-out;
-	-moz-transition: 1s ease-in-out;
-	-webkit-transition: 1s ease-in-out;
+	transform: translate(-1000px, 0px);
 }
 
 .user-display .user-display-item .selectedUser > a{
