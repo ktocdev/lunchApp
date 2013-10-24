@@ -8,10 +8,12 @@
 	float: left;
 	clear: both;
 	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
 }
 
 .user-display li.animateOff{
 	transform: translate(-1000px, 0px);
+	-webkit-transform: translate(-1000px, 0px);
 }
 
 .user-display .user-display-item .selectedUser > a{
@@ -31,7 +33,6 @@
 .user-display a label:hover{
 	border: 2px solid #dfdfdf;
 	transition: .25s ease-in-out;
-	-moz-transition: .25s ease-in-out;
 	-webkit-transition: .25s ease-in-out;
 }
 
